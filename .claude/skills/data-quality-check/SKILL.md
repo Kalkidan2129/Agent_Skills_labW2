@@ -21,7 +21,7 @@ This Skill **reports problems; it does not fix them.** Never modify, overwrite, 
 Run the bundled script. It's stdlib-only Python, so it needs no installation:
 
 ```bash
-python .claude/skills/data-quality-check/scripts/profile_data.py <path-to-csv>
+python "${CLAUDE_SKILL_DIR}/scripts/profile_data.py" <path-to-csv>
 ```
 
 The script prints a factual profile: row and column counts, missing values, duplicates, inferred types, mixed formats, and outliers. Using a script instead of eyeballing the data makes the counts exact and the same every time.
